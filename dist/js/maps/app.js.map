@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/js/modules/module_one.js","src/js/app.js"],"names":["console","log","AOS","init"],"mappings":"aACIA,QAAQC,IAAR,OCIJC,IAAIC","file":"../app.js","sourcesContent":["export default function test() {\r\n    console.log(`lol`);\r\n}","import test from './modules/module_one'\n\n\ntest()\n\nAOS.init()\n"]}
