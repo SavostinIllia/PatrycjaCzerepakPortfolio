@@ -30,3 +30,11 @@
 @mixin animationTransition ($time: .3s, $delay: 0s) {
     transition: $time  $delay ease-in-out;
 }
+@mixin DF ($d: flex, $fd: row, $fw: wrap, $jc: space-between, $ai: center, $w: 100%) {
+    display: $d;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+    justify-content: $jc;
+    align-items: $ai;
+    width: $w;
+}
