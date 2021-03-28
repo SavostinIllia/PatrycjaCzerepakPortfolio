@@ -1,0 +1,81 @@
+#hero{
+    .section_container{
+        position: relative;
+        height: 100vh;
+        .section_title{
+            padding-top: 300px;
+        }
+        .hero_wrapper{
+            @include DF($ai: top, $jc: inherit);    
+            .hero_text{
+                margin-right: 50px;
+                font-size: 16px;
+                font-weight: 400;
+                color: black;
+                &:last-of-type{
+                    color: lighten($grey, 25%);
+                }
+            }
+            .hero_footer{
+                position: absolute;
+                bottom: 50px;
+                @include DF;
+
+                .scroll_down{
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: black;   
+                    border: none;
+                    background: transparent;
+                    svg,path{
+                        height: 35px;
+                        @include animationTransition;
+                        animation: scroll_down 2s infinite;
+                    }    
+                    &:hover{
+                        cursor: pointer;
+                        color: $grey;
+                        svg,path{
+                            @include animationTransition;
+                            fill: $grey;
+                        }
+                    }
+                }
+
+                .hero_contact{
+                    margin-right: 100px;
+                    span{
+                        color: $grey;
+                        display: inline-block;
+                        padding-bottom: 10px;
+                        font-size: 15px;
+                    }
+                    a{
+                        svg,path{
+                            vertical-align: middle;
+                            margin-right: 10px;
+                        }
+                        display: inline-block;
+                        margin-right: 25px;
+                        &:hover{
+                            color: $grey;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes scroll_down{
+    from{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
