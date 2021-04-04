@@ -1,9 +1,5 @@
 #aboutMe{
     margin-top: 300px;
-    padding-bottom: 1000px;
-    .section_title{
-        padding-bottom: 100px;
-    }
     .aboutMe_wrapper{
         @include DF($ai: inherit);
         &_img{

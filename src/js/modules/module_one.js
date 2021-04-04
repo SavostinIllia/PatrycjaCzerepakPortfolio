@@ -7,18 +7,18 @@ export default function sectionCounter() {
         paginateSection.map((index, section) =>{
             sectionPosition.push($(section).offset().top)
             $(window).on('scroll', function(){
-                if($(window).scrollTop() > sectionPosition[0] && $(window).scrollTop() + 250 < sectionPosition[1]){
+                if($(window).scrollTop() > sectionPosition[0] && $(window).scrollTop() < sectionPosition[1] - 600){
                     $(paginationList[index]).removeClass('active')
                     $(paginationList[0]).addClass('active')
                     $('.pagination span').css({top: 25})
-                }else if($(window).scrollTop()  >= (sectionPosition[1] - 500) && $(window).scrollTop() + 250 < sectionPosition[2]){
+                }else if($(window).scrollTop()  >= (sectionPosition[1] - 600) && $(window).scrollTop() < sectionPosition[2] - 600){
                     $(paginationList[index]).removeClass('active')
                     $(paginationList[1]).addClass('active')
                     $('.pagination span').css({top: 25 + paginationActiveDeviderStep})
-                }else if($(window).scrollTop() >= sectionPosition[2] - 500){
+                }else if($(window).scrollTop() >= sectionPosition[2] - 600){
                     $(paginationList[index]).removeClass('active')
                     $(paginationList[2]).addClass('active')
-                    $('.pagination span').css({top: 25 + (paginationActiveDeviderStep * 4)})
+                    $('.pagination span').css({top: 25 + (paginationActiveDeviderStep * 2)})
                 }
             })
         })
