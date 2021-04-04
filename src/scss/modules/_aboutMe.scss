@@ -1,0 +1,54 @@
+#aboutMe{
+    margin-top: 300px;
+    padding-bottom: 1000px;
+    .section_title{
+        padding-bottom: 100px;
+    }
+    .aboutMe_wrapper{
+        @include DF($ai: inherit);
+        &_img{
+            flex: 0 0 35%;
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 50%;
+            img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                max-width: 500px;
+                transform: translate(-50%, -50%) rotate(270deg);
+                
+            }
+        }
+        &_text{
+            flex: 0 0 50%;
+            span{
+                font-size: 40px;
+                font-weight: 700;
+                position: relative;
+                display: inline-block;
+                margin-bottom: 40px;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    width: 100vw;
+                    height: 2px;
+                    background: black;
+                    left: calc(100% + 30px);
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            p, %aboutMeText{
+                font-weight: 400;
+                font-size: 18px;
+                color: black;
+            }
+            .text-grey {
+                @extend %aboutMeText;
+                color: $grey;
+                padding-bottom: 30px;
+            }
+        }
+    }
+}

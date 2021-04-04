@@ -1,4 +1,5 @@
-import test from './modules/module_one'
-test()
+import sectionCounter from './modules/module_one'
+
+sectionCounter()
 
 AOS.init()
