@@ -1,0 +1,50 @@
+#portfolioSection{
+    margin-top: 300px;
+    padding-bottom: 50px;
+    .portfolio{
+        @include DF($ai: flex-start, $jc: inherit);
+        span{
+            font-size: 16px;
+            padding-bottom: 50px;
+            display: block;
+            flex: 0 0 100%;
+        }
+        p{
+            display: inline-block;
+            margin-right: 50px;
+            font-size: 16px;
+            &.grey-text{
+                color: $grey;
+            }
+        }
+    }
+    .portfolio_table{
+        padding-top: 50px;
+        &_container{
+            width: 61%;
+            margin-left: auto;
+            &_list{
+                display: block;
+                border-top: 1px solid black;
+                .project_link{
+                    @include DF($jc: inherit);
+                    padding: 10px 0;
+                    &_type{
+                        margin-right: 40px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        min-width: 140px;
+                    }
+                    &_descr{
+                        display: inline-block;
+                        color: $grey;
+                        text-align: left;
+                    }
+                }
+                &:last-of-type{
+                    border-bottom: 1px solid black;
+                }
+            }
+        }
+    }
+}
