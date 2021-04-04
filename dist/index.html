@@ -34,8 +34,20 @@
     </nav>
 </aside>
 
+    <!-- PAGE PAGINATION -->
+    <section id="pagePagination">
+    <ul class="pagination">
+        <li data-pagination="#hero" class="pagination_list active"><a href="">01</a></li>
+        <li data-pagination="#aboutMe" class="pagination_list"><a href="">02</a></li>
+        <li data-pagination="#lol" class="pagination_list"><a href="">03</a></li>
+        <li data-pagination="4" class="pagination_list"><a href="">04</a></li>
+        <li data-pagination="5" class="pagination_list"><a href="">05</a></li>
+        <span>&nbsp;</span>
+    </ul>
+</section>
+
     <!-- SECTIONS -->
-    <section data-aos="fade"  data-aos-delay="2500" data-aos-duration="2000" id="hero">
+    <section data-aos="fade" data-aos-delay="2500" data-aos-duration="2000"  data-paginateSection id="hero">
     <div class="section_container">
         <div class="section_title">
             <h2>UI/UX designer</h2>
@@ -80,7 +92,7 @@
         </div>
     </div>
 </section>
-    <section id="aboutMe" >
+    <section id="aboutMe" data-paginateSection >
     <div class="section_container">
         <div class="section_title" data-aos="fade" data-aos-delay="500" data-aos-duration="1000">
             <h2>
@@ -120,7 +132,7 @@
 
 
 
-    <div id="lol" style="padding-bottom: 1000px;">
+    <div id="lol" data-paginateSection style="padding-bottom: 2000px;">
         <div class="section_container">
             <p>rere</p>
         </div>
