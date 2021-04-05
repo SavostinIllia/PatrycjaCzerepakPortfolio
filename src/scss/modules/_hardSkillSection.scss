@@ -1,0 +1,30 @@
+#hardSkillSection{
+    margin-top: 300px;
+    .hardSkill_wrapper{
+        &_table{
+            @include DF($jc: flex-start);
+            &_list{
+                flex: 0 0 35%;
+                position: relative;
+                margin: 20px 0;
+                svg{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                span{
+                    padding-left: 50px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    display: block;
+                    padding-bottom: 20px;
+                }
+                p{
+                    padding-left: 50px;
+                    font-weight: 400;
+                    color: $grey;
+                }
+            }
+        }
+    }
+}
