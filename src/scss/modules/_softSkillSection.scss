@@ -1,0 +1,25 @@
+#softSkillSection{
+    margin-top: 300px;
+    .softSkill_wrapper{
+        @include DF($ai: flex-start, $jc: inherit);
+        &_list{
+            width: 250px;
+            margin-right: 100px;
+            span{
+               font-size: 18px;
+               font-weight: 700;
+               padding-bottom: 50px; 
+               display: block;
+            }
+            li{
+                padding-bottom: 20px;
+                font-size: 16px;
+            }
+        }
+        &_text{
+            font-size: 16px;
+            color: $grey;
+            padding-top: 65px;
+        }
+    }
+}

@@ -40,8 +40,8 @@
         <li data-pagination="#hero" class="pagination_list active"><a href="">01</a></li>
         <li data-pagination="#aboutMe" class="pagination_list"><a href="">02</a></li>
         <li data-pagination="#portfolioSection" class="pagination_list"><a href="">03</a></li>
-        <li data-pagination="4" class="pagination_list"><a href="">04</a></li>
-        <li data-pagination="5" class="pagination_list"><a href="">05</a></li>
+        <li data-pagination="#hardSkillSection" class="pagination_list"><a href="">04</a></li>
+        <li data-pagination="#softSkillSection" class="pagination_list"><a href="">05</a></li>
         <span>&nbsp;</span>
     </ul>
 </section>
@@ -207,7 +207,7 @@
         </div>
     </div>
 </section>
-    <section id="hardSkillSection">
+    <section id="hardSkillSection" data-paginatesection>
     <div class="section_container">
         <div class="section_title" data-aos-offset="200" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
             <h2>
@@ -299,7 +299,7 @@
                     <p>Program Indesign wykorzystuję <br>
                         do pracy nad składem tekstu</p>
                 </li>
-                <li class="hardSkill_wrapper_table_list" data-aos-offset="200" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                <li class="hardSkill_wrapper_table_list" data-aos-offset="50" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0.401367V31.5984H32V0.401367H0ZM1.333 1.73537H30.666V30.2664H1.333V1.73537ZM11.697 22.0274C11.697 22.1564 11.677 22.1984 11.526 22.1984H9.473C9.344 22.1984 9.302 22.1374 9.302 22.0274V7.70837C9.302 7.57937 9.363 7.53137 9.473 7.53137H11.546C11.655 7.53137 11.697 7.57937 11.697 7.68837V22.0274ZM14.063 16.8604C14.063 13.6724 16.162 11.1884 19.531 11.1884C19.812 11.1884 19.97 11.1884 20.235 11.2034V7.66737C20.2342 7.64988 20.2369 7.63241 20.243 7.61601C20.2491 7.5996 20.2585 7.5846 20.2705 7.5719C20.2826 7.5592 20.2971 7.54906 20.3131 7.5421C20.3292 7.53513 20.3465 7.53148 20.364 7.53137H22.531C22.646 7.53137 22.667 7.57937 22.667 7.64637V20.1214C22.667 20.4904 22.667 20.9544 22.735 21.4604C22.735 21.5484 22.708 21.5694 22.62 21.6164C21.5265 22.1367 20.331 22.4072 19.12 22.4084C16.167 22.4084 14.057 20.5804 14.057 16.8614L14.063 16.8604ZM20.235 13.3644C20.036 13.2764 19.771 13.2294 19.443 13.2294C17.73 13.2294 16.527 14.5464 16.527 16.7494C16.527 19.2604 17.75 20.2704 19.292 20.2704C19.62 20.2704 19.973 20.2294 20.235 20.1144V13.3644Z" fill="black"/>
                         </svg>
@@ -308,7 +308,7 @@
                     <p>Program Indesign wykorzystuję <br>
                         do pracy nad składem tekstu</p>
                 </li>
-                <li class="hardSkill_wrapper_table_list" data-aos-offset="200" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                <li class="hardSkill_wrapper_table_list" data-aos-offset="50" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0)">
                         <path d="M0 0.401367V31.5994H32V0.401367H0ZM1.333 1.73437H30.666V30.2654H1.333V1.73437ZM7.734 7.70837C7.734 7.61937 7.922 7.55237 8.031 7.55237C9.17634 7.50392 10.3226 7.48124 11.469 7.48437C15.167 7.48437 16.604 9.51037 16.604 12.1044C16.604 15.4954 14.146 16.9484 11.135 16.9484C10.625 16.9484 10.453 16.9224 10.099 16.9224V22.0474C10.099 22.1564 10.057 22.2034 9.948 22.2034H7.885C7.776 22.2034 7.734 22.1614 7.734 22.0524V7.70837ZM10.099 14.7924C10.406 14.8134 10.651 14.8134 11.182 14.8134C12.739 14.8134 14.208 14.2614 14.208 12.1524C14.208 10.4594 13.156 9.60037 11.375 9.60037C10.849 9.60037 10.344 9.62137 10.099 9.64237V14.7924ZM21.578 13.2034C20.521 13.2034 20.167 13.7344 20.167 14.1724C20.167 14.6564 20.407 14.9854 21.818 15.7144C23.907 16.7304 24.568 17.6934 24.568 19.1254C24.568 21.2554 22.938 22.4014 20.74 22.4014C19.573 22.4014 18.579 22.1564 18.006 21.8284C17.923 21.7864 17.902 21.7194 17.902 21.6094V19.6514C17.902 19.5214 17.965 19.4744 18.053 19.5424C18.8511 20.0613 19.783 20.3365 20.735 20.3344C21.792 20.3344 22.23 19.8964 22.23 19.2984C22.23 18.8144 21.923 18.3974 20.584 17.6944C18.688 16.7884 17.896 15.8664 17.896 14.3244C17.896 12.6054 19.24 11.1784 21.568 11.1784C22.714 11.1784 23.521 11.3554 23.964 11.5484C24.073 11.6164 24.094 11.7254 24.094 11.8144V13.6424C24.094 13.7514 24.026 13.8194 23.896 13.7724C23.302 13.4234 22.427 13.1994 21.573 13.1994L21.578 13.2034Z" fill="black"/>
@@ -324,6 +324,38 @@
                         do pracy nad składem tekstu</p>
                 </li>
             </ul>
+        </div>
+    </div>
+</section>
+    <section id="softSkillSection" data-paginatesection>
+    <div class="section_container">
+        <div class="section_title">
+            <h2>
+                <span>O mnie</span>
+                Umiejętności miękkie
+            </h2>
+        </div>
+        <div class="softSkill_wrapper">
+            <ul class="softSkill_wrapper_list">
+                <span>Umiejętności miękkie</span>
+                <li>asertywność</li>
+                <li>komunikatywność</li>
+                <li>odporność na stres</li>
+                <li>kreatywność</li>
+                <li>umiejętność pracy w zespole</li>
+                <li>wysoka kultura osobista</li>
+                <li>samodyscyplina</li>
+                <li>dobra organizacja pracy.</li>
+            </ul>
+            <p class="softSkill_wrapper_text">
+                Grafik freelancer, nie tylko z pasji, ale i z wykształcenia. <br>
+                Absolwentka wydziału Grafiki wrocławskiej Akademii. <br>
+                Perfekcjonistka w pracy i w życiu. <br>
+                <br><br>
+                Grafik freelancer, nie tylko z pasji, ale i z wykształcenia. <br>
+                Absolwentka wydziału Grafiki wrocławskiej Akademii. <br>
+                Perfekcjonistka w pracy i w życiu. <br>
+                </p>
         </div>
     </div>
 </section>

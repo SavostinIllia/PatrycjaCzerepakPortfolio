@@ -15,10 +15,14 @@ export default function sectionCounter() {
                     $(paginationList[index]).removeClass('active')
                     $(paginationList[1]).addClass('active')
                     $('.pagination span').css({top: 25 + paginationActiveDeviderStep})
-                }else if($(window).scrollTop() >= sectionPosition[2] - 600){
+                }else if($(window).scrollTop() >= sectionPosition[2] - 600 && $(window).scrollTop() < sectionPosition[3] - 600){
                     $(paginationList[index]).removeClass('active')
                     $(paginationList[2]).addClass('active')
                     $('.pagination span').css({top: 25 + (paginationActiveDeviderStep * 2)})
+                }else if($(window).scrollTop() >= sectionPosition[3] - 600 ){
+                    $(paginationList[index]).removeClass('active')
+                    $(paginationList[3]).addClass('active')
+                    $('.pagination span').css({top: 25 + (paginationActiveDeviderStep * 3)})
                 }
             })
         })
