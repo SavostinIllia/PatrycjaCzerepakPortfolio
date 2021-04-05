@@ -1,0 +1,59 @@
+footer{
+    margin-top: 300px;
+    .footer{
+        margin-bottom: 40px;
+        &_title{
+            font-size: 24px;
+            font-weight: 700;
+            display: block;
+            padding-bottom: 15px;
+        }
+        &_list{
+            position: relative;
+            @include DF();
+            &_item{
+                @include DF();
+                flex: 0 0 50%;
+                margin-bottom: 20px;
+                a{
+                    @include DF($jc: flex-start);
+                    svg{
+                        vertical-align: middle;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            button{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background: transparent;
+                border: none;
+                text-align: center;
+                font-size: 18px ;
+                outline: none;
+                svg{
+                    @include animationTransition();
+                    margin: 0 auto;
+                    display: block;
+                    animation: arrowUp 2s infinite;
+                }
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@keyframes arrowUp{
+    from{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-5px)
+    }
+    to{
+        transform: translateY(0)
+    }
+}
