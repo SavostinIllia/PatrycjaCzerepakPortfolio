@@ -1,6 +1,7 @@
 @import 'utils/vars';
 @import 'utils/mixins';
 @import 'libs/libs';
+@import 'general/general';
 
 // ******* MODULES **********
 @import 'modules/navpanel';
@@ -11,7 +12,9 @@
 @import 'modules/hardSkillSection';
 @import 'modules/softSkillSection';
 @import 'modules/projectExamples';
+@import 'modules/kontaktSection';
+@import 'modules/footer';
 
 
 
-@import 'general/general';
+
